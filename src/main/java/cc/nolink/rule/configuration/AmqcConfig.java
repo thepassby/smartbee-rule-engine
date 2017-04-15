@@ -1,7 +1,7 @@
 /**
  * 
  */
-package cc.nolink.configuration;
+package cc.nolink.rule.configuration;
 
 import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.core.Binding;
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
-import cc.nolink.listener.RuleMessageDispatcher;
+import cc.nolink.rule.listener.RuleMessageDispatcher;
 
 /**
  * @author reset
