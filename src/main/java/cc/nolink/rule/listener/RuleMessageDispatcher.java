@@ -22,7 +22,7 @@ public class RuleMessageDispatcher implements ChannelAwareMessageListener {
 	 */
 	@Override
 	public void onMessage(Message message, Channel channel) throws Exception {
-		logger.info("receive message:" + new String(message.getBody()));
+		logger.info("server.receive message:" + new String(message.getBody()));
 		channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
 	}
 }
